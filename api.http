@@ -1,0 +1,2 @@
+### API Ping
+GET http://localhost:3001/ping
