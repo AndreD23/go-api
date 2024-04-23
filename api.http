@@ -1,2 +1,22 @@
 ### API Ping
 GET http://localhost:3001/ping
+
+### List Opportunities
+GET http://localhost:3001/api/v1/opportunity
+
+### Show Opportunity
+GET http://localhost:3001/api/v1/opportunity/id
+
+### Create Opportunity
+POST http://localhost:3001/api/v1/opportunity
+Content-Type: application/json
+
+{
+  "name": "André Dorneles"
+}
+
+### Update Opportunity
+PUT http://localhost:3001/api/v1/opportunity/id
+
+### Delete Opportunity
+DELETE http://localhost:3001/api/v1/opportunity/id
