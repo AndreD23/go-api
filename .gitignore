@@ -1,3 +1,23 @@
-/.idea
+# Go Sum File
 go.sum
+
+# Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test Binary
+*.test
+
+# Coverage
+*.out
+
+# DB Folder
+db/
+
+# IDEs files
+/.idea
+
+# Environments
 .env
