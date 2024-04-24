@@ -12,7 +12,12 @@ POST http://localhost:3001/api/v1/opportunity
 Content-Type: application/json
 
 {
-  "name": "André Dorneles"
+  "role": "Senior Software Engineer",
+  "company": "ImperioSoft Studios",
+  "location": "Brazil - São Paulo",
+  "remote": true,
+  "salary": 520000,
+  "link": "https://www.linkedin.com/in/andre-dorneles-pereira/"
 }
 
 ### Update Opportunity

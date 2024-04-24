@@ -6,6 +6,9 @@ import (
 )
 
 func loadRoutes(router *gin.Engine) {
+	// Initialize Handler
+	handler.InitializeHandler()
+
 	router.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{
 			"message": "pong",
