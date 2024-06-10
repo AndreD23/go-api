@@ -18,9 +18,9 @@ func loadRoutes(router *gin.Engine) {
 	v1 := router.Group("/api/v1")
 	{
 		v1.GET("/opportunity", handler.ListOpportunitiesHandler)
-		v1.GET("/opportunity/id", handler.ShowOpportunityHandler)
+		v1.GET("/opportunity/:id", handler.ShowOpportunityHandler)
 		v1.POST("/opportunity", handler.CreateOpeningHandler)
-		v1.PUT("/opportunity/id", handler.UpdateOpeningHandler)
-		v1.DELETE("/opportunity/id", handler.DeleteOpeningHandler)
+		v1.PUT("/opportunity/:id", handler.UpdateOpeningHandler)
+		v1.DELETE("/opportunity/:id", handler.DeleteOpeningHandler)
 	}
 }
