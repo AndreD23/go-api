@@ -10,6 +10,19 @@ import (
 	"strconv"
 )
 
+// @BasePath /api/v1
+
+// DeleteOpeningHandler
+// @Summary DeleteOpeningHandler
+// @Description Delete a job opportunity
+// @Tags Opportunities
+// @Accept json
+// @Produce json
+// @Param id query string true "Opportunity identification"
+// @Success 200 {object} DeleteOpportunityResponse
+// @Failure 400 {object} ErrorResponse
+// @Failure 500 {object} ErrorResponse
+// @Router /opportunity/id [delete]
 func DeleteOpeningHandler(ctx *gin.Context) {
 	id := ctx.Param("id")
 	if id == "" {

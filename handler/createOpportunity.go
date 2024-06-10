@@ -7,6 +7,19 @@ import (
 	"net/http"
 )
 
+// @BasePath /api/v1
+
+// CreateOpeningHandler
+// @Summary CreateOpeningHandler
+// @Description Create a new job opportunity
+// @Tags Opportunities
+// @Accept json
+// @Produce json
+// @Param request body CreateOpportunityRequest true "Request body"
+// @Success 200 {object} CreateOpportunityResponse
+// @Failure 400 {object} ErrorResponse
+// @Failure 500 {object} ErrorResponse
+// @Router /opportunity [post]
 func CreateOpeningHandler(ctx *gin.Context) {
 	// Difines the fields to get from json body
 	request := CreateOpportunityRequest{}

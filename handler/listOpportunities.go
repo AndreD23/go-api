@@ -6,6 +6,18 @@ import (
 	"net/http"
 )
 
+// @BasePath /api/v1
+
+// ListOpportunitiesHandler
+// @Summary ListOpportunitiesHandler
+// @Description List all jobs opportunity
+// @Tags Opportunities
+// @Accept json
+// @Produce json
+// @Success 200 {object} ListOpportunityResponse
+// @Failure 400 {object} ErrorResponse
+// @Failure 500 {object} ErrorResponse
+// @Router /opportunity [get]
 func ListOpportunitiesHandler(ctx *gin.Context) {
 	opportunities := []schemas.Opportunity{}
 

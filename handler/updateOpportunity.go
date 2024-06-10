@@ -10,6 +10,20 @@ import (
 	"strconv"
 )
 
+// @BasePath /api/v1
+
+// UpdateOpeningHandler
+// @Summary UpdateOpeningHandler
+// @Description Update a job opportunity
+// @Tags Opportunities
+// @Accept json
+// @Produce json
+// @Param id query string true "Opportunity identification"
+// @Param request body UpdateOpportunityRequest true "Request body"
+// @Success 200 {object} UpdateOpportunityResponse
+// @Failure 400 {object} ErrorResponse
+// @Failure 500 {object} ErrorResponse
+// @Router /opportunity/id [patch]
 func UpdateOpeningHandler(ctx *gin.Context) {
 	id := ctx.Param("id")
 	if id == "" {
